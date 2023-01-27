@@ -5,9 +5,11 @@
   place-content: center;
 }
 main{
-  border: 1px solid #fff;
+  overflow-y: hidden;
   aspect-ratio: 9/16;
   max-width: 375px;
-  width: 100vw;
+  width: 100vw; 
+  height: auto;
+  display: block;
   border-radius: 3px;
 }

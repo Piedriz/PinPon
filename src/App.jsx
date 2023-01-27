@@ -1,10 +1,10 @@
 import './App.css'
-
+import { VideoPlayer } from './components/VideoPlayer'
 function App () {
   return (
     <div className='App'>
       <main>
-        PinPon
+        <VideoPlayer />
       </main>
     </div>
   )
