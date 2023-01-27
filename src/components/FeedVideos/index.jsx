@@ -10,18 +10,21 @@ const VIDEOS = [
     shares: 891,
     comments: 333,
     songTitle: 'sonido original - Foody Fetish',
-    albunCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D'
+    albumCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D',
+    albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/574c01221cf235477a01d485d8e51ce8~c5_100x100.jpeg?x-expires=1675026000&x-signature=QaYDeKyCLlAjXA9DdoI%2BVdGT0Wg%3D'
   },
   {
     id: 2,
-    src: 'https://scontent.fbaq1-1.fna.fbcdn.net/v/t42.1790-2/324591606_100926969542836_1410547467590873460_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjU0NSwicmxhIjoxMTYwLCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=Zn0j1bXQW54AX89H7bX&_nc_rml=0&_nc_ht=scontent.fbaq1-1.fna&oh=00_AfBmq6jcFkCtdbI8cE9REimQZpwf4k-DNfCmjg5rsxK1Jg&oe=63D553EF',
-    author: 'Yum Yum India',
-    description: 'Spiral Banana Twister in Bangaluru',
+    src: 'https://scontent.feoh3-1.fna.fbcdn.net/v/t42.1790-2/318626331_5820295804676417_6607144213753891587_n.mp4?_nc_cat=103&ccb=1-7&_nc_sid=985c63&efg=eyJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=ib2gZX3MdAkAX_gtSQs&_nc_oc=AQmSGG6m_5NzZ9YdcNeNiX6UKwEL0mQbUB4Hf2xwBnu5S5wfcRFOUlP4UZnH3QZLllp_ICDMuJ6ak-r39yFJyDSj&_nc_rml=0&_nc_ht=scontent.feoh3-1.fna&oh=00_AfAmiWc7uZ0fJWBaADN2ywQ2XjMvuEDIDXHrw5J3202Krw&oe=63D5A5E5',
+    author: 'Amigrifo Morado',
+    description: 'Me est4f4ron con este gravity de $10,000 😭',
     likes: 821,
     shares: 12,
     comments: 1231,
     songTitle: 'sonido original - Foody Fetish',
-    albunCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D'
+    albumCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D',
+    albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/574c01221cf235477a01d485d8e51ce8~c5_100x100.jpeg?x-expires=1675026000&x-signature=QaYDeKyCLlAjXA9DdoI%2BVdGT0Wg%3D'
+
   },
   {
     id: 3,
@@ -32,7 +35,9 @@ const VIDEOS = [
     shares: 891,
     comments: 333,
     songTitle: 'sonido original - Foody Fetish',
-    albunCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D'
+    albumCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D',
+    albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/574c01221cf235477a01d485d8e51ce8~c5_100x100.jpeg?x-expires=1675026000&x-signature=QaYDeKyCLlAjXA9DdoI%2BVdGT0Wg%3D'
+
   }
 ]
 export const FeedVideos = () => {

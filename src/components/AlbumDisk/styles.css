@@ -1,0 +1,26 @@
+.album{
+    animation: rotate 3s linear infinite;
+    background-image: url("assets/vinilo2.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.musicCover{
+    position: absolute;
+    border-radius: 100%;
+    width: 32px;
+    overflow: hidden;
+    height: 32px;
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}

@@ -1,0 +1,12 @@
+.description{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    
+}

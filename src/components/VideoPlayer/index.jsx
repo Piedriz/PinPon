@@ -2,9 +2,9 @@ import React from 'react'
 import './styles.css'
 import clsx from 'clsx'
 import { VideoPlayerAside } from '../VideoPlayerActions'
+import { VideoDescription } from '../VideoDescription'
 
-export const VideoPlayer = ({ src }) => {
-  console.log(src)
+export const VideoPlayer = ({ src, author, description, albumImage }) => {
   const [playing, setPlaying] = React.useState(false)
   const video = React.useRef()
 
@@ -30,6 +30,12 @@ export const VideoPlayer = ({ src }) => {
       />
       <button className={playerClassName} onClick={handlePlay} />
       <VideoPlayerAside />
+      <VideoDescription
+        albumImage={albumImage}
+        description={description}
+        author={author}
+      />
+
     </div>
 
   )
