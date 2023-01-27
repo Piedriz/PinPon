@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.css'
-import clsx from 'clsx'
 import { VideoPlayerAside } from '../VideoPlayerActions'
 import { VideoDescription } from '../VideoDescription'
 
@@ -16,7 +15,6 @@ export const VideoPlayer = ({ src, author, description, albumImage }) => {
     }
     setPlaying(!playing)
   }
-  const playerClassName = clsx({ hidden: playing }, { player: !playing })
 
   return (
     <div className='container'>
@@ -28,7 +26,7 @@ export const VideoPlayer = ({ src, author, description, albumImage }) => {
         src={src}
         controls={false}
       />
-      <button className={playerClassName} onClick={handlePlay} />
+      {!playing && <button className='player' onClick={handlePlay} />}
       <VideoPlayerAside />
       <VideoDescription
         albumImage={albumImage}
