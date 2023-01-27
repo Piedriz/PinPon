@@ -1,0 +1,9 @@
+.actions{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.action{
+    margin-bottom: 20px;
+}

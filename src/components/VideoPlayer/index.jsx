@@ -1,8 +1,10 @@
 import React from 'react'
-import './styles.modules.css'
-const SRC = 'https://scontent.fbaq1-1.fna.fbcdn.net/v/t42.1790-2/10000000_654609502612263_6489387452965771497_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjUxMSwicmxhIjoxMzg2LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=gdH0h93e4K4AX-vBTx-&_nc_rml=0&_nc_ht=scontent.fbaq1-1.fna&oh=00_AfCzHp3eCIIRyNcvudt5M8mVI_9KN5sTHdQUAfI5pte5Xg&oe=63D4D83E'
+import './styles.css'
+import clsx from 'clsx'
+import { VideoPlayerAside } from '../VideoPlayerActions'
 
-export const VideoPlayer = () => {
+export const VideoPlayer = ({ src }) => {
+  console.log(src)
   const [playing, setPlaying] = React.useState(false)
   const video = React.useRef()
 
@@ -14,16 +16,20 @@ export const VideoPlayer = () => {
     }
     setPlaying(!playing)
   }
+  const playerClassName = clsx({ hidden: playing }, { player: !playing })
 
   return (
-    <div>
+    <div className='container'>
       <video
+        onClick={handlePlay}
         ref={video}
+        loop
         className='video'
-        src={SRC}
+        src={src}
         controls={false}
       />
-      <button className='player' onClick={handlePlay} />
+      <button className={playerClassName} onClick={handlePlay} />
+      <VideoPlayerAside />
     </div>
 
   )

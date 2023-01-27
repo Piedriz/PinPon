@@ -3,9 +3,11 @@
   height: 100vh;
   display: grid;
   place-content: center;
+  overflow: hidden;
 }
-main{
-  overflow-y: hidden;
+main{ 
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   aspect-ratio: 9/16;
   max-width: 375px;
   width: 100vw; 
