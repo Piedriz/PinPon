@@ -12,7 +12,7 @@ export const VideoDescription = ({ author, description, albumImage }) => {
             @{author}
           </a>
         </strong>
-        <p>{description}</p>
+        <p className='descrip'>{description}</p>
       </div>
 
       <div>

@@ -23,7 +23,7 @@ const VIDEOS = [
     comments: 1231,
     songTitle: 'sonido original - Foody Fetish',
     albumCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/ccdfced70802867a94bfc1d31a437716~c5_100x100.jpeg?x-expires=1675004400&x-signature=%2F5H%2Bm14v5YNVUzdfBCs6HmKHl3s%3D',
-    albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/574c01221cf235477a01d485d8e51ce8~c5_100x100.jpeg?x-expires=1675026000&x-signature=QaYDeKyCLlAjXA9DdoI%2BVdGT0Wg%3D'
+    albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7c30136717593c2bd3d295c8385aedcd~c5_100x100.jpeg?x-expires=1675033200&x-signature=t5rG4t1gN1i%2BAvHEmy4soq7zvjg%3D'
 
   },
   {

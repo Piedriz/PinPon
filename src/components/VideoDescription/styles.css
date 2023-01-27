@@ -1,4 +1,4 @@
-.description{
+.description {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -7,11 +7,18 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.753) 0%, rgba(255, 255, 255, 0) 60%);
 }
 
-.author{
-    font-weight: bold;
+.author {
+    font-size: 17px;
+    font-weight: 600;
     color: #fff;
     text-decoration: none;
+}
+
+.descrip {
+    font-size: 15px;
 }
