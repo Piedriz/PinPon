@@ -8,5 +8,10 @@
     align-items: center;
     color: white;
     padding: 20px;
-    
+}
+
+.author{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
