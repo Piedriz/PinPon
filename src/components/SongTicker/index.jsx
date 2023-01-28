@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoMusicalNotesSharp } from 'react-icons/io5'
 import './styles.css'
+import Marquee from 'react-fast-marquee'
 
 export const SongTicker = ({ songTitle }) => {
   return (
@@ -8,9 +9,9 @@ export const SongTicker = ({ songTitle }) => {
       <div className='songTickerIcon'>
         <IoMusicalNotesSharp size={15} />
       </div>
-      <marquee className='marquee'>
+      <Marquee speed={100} gradient={false}>
         {songTitle}
-      </marquee>
+      </Marquee>
     </div>
   )
 }
