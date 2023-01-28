@@ -9,12 +9,12 @@ body{
 }
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('assets/Proxima-Nova-Semibold.woff2') format('woff2');
+  src: url('assets/ProximaNova-Semibold.woff2') format('woff2');
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('assets/Proxima-Nova-Bold.woff2') format('woff2');
+  font-family: 'Proxima Nova3';
+  src: url('assets/Proxima-Nova-Bold.woff') format('woff');
   font-weight: 700;
 }
 
