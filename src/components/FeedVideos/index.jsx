@@ -30,7 +30,7 @@ const VIDEOS = [
     id: 3,
     src: 'https://scontent.fbaq1-1.fna.fbcdn.net/v/t42.1790-2/10000000_125327590312642_1025375548508155110_n.mp4?_nc_cat=106&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjU0MywicmxhIjozNjA1LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=zw2Nat_blZ0AX_BOHvQ&_nc_rml=0&_nc_ht=scontent.fbaq1-1.fna&oh=00_AfDHMweNgvwN5FjtdPPRcEM2VHCGKqki0g5PGcWsb8eOoA&oe=63D5EACE',
     author: 'Algo Bien',
-    description: 'Una almeja chocolata tan fresca como esta so',
+    description: 'Una almeja chocolata tan fresca como esta solo como yo',
     likes: 928,
     shares: 891,
     comments: 333,

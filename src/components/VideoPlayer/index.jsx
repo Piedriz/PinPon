@@ -3,7 +3,7 @@ import './styles.css'
 import { VideoPlayerAside } from '../VideoPlayerActions'
 import { VideoDescription } from '../VideoDescription'
 
-export const VideoPlayer = ({ src, author, description, albumImage }) => {
+export const VideoPlayer = ({ src, author, description, albumImage, songTitle }) => {
   const [playing, setPlaying] = React.useState(false)
   const video = React.useRef()
 
@@ -32,6 +32,7 @@ export const VideoPlayer = ({ src, author, description, albumImage }) => {
         albumImage={albumImage}
         description={description}
         author={author}
+        songTitle={songTitle}
       />
 
     </div>

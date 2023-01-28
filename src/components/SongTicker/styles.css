@@ -1,0 +1,12 @@
+.songTicker{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.songTickerIcon{
+    margin-right: 12px
+}
+.marquee{
+    font-size: 15px;
+}
