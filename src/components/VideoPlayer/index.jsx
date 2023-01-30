@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 export const VideoPlayer = ({ src, user, description, albumImage, song }) => {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5
+    threshold: 0.9
   })
 
   const [playing, setPlaying] = React.useState(true)
@@ -36,12 +36,13 @@ export const VideoPlayer = ({ src, user, description, albumImage, song }) => {
         onClick={handlePlay}
         ref={video}
         loop
+        muted
         className='video'
         src={src}
         controls={false}
       />
       {!playing && <button className='player' onClick={handlePlay} />}
-      <VideoPlayerAside />
+      <VideoPlayerAside user={user} />
       <VideoDescription
         albumImage={albumImage}
         description={description}

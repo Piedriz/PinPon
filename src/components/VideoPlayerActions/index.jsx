@@ -1,10 +1,11 @@
 import React from 'react'
 import { BsFillHeartFill } from 'react-icons/bs'
 import { FaCommentDots, FaShare } from 'react-icons/fa'
+import { AiFillPlusCircle } from 'react-icons/ai'
 
 import './styles.css'
 
-export const VideoPlayerAside = ({ likes = 1122, comments = 142, shares = 1241, hearted = false }) => {
+export const VideoPlayerAside = ({ user, likes = 1122, comments = 142, shares = 1241, hearted = false }) => {
   const handleLike = () => {
     console.log('liked')
   }
@@ -16,7 +17,12 @@ export const VideoPlayerAside = ({ likes = 1122, comments = 142, shares = 1241, 
   }
   return (
     <aside className='actions'>
-
+      <div className='userImageContainer'>
+        <img className='userImage' alt={user.username} src={user.userImage} />
+        <div className='userAdd'>
+          <AiFillPlusCircle className='icon' color='rgb(254, 44, 85)' size={24} />
+        </div>
+      </div>
       <button onClick={handleLike} className='actionButton'>
         <BsFillHeartFill color={hearted ? 'red' : 'whites'} size={30} />
         <span title='likes'>{likes}</span>

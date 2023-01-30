@@ -1,6 +1,10 @@
 .actions{
     position: absolute;
     bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     right: 8px;
 }
 
@@ -16,4 +20,25 @@
     margin-bottom: 15px;
     background-color: transparent;
     border: none;
+}
+.userImage{
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+}
+.userImageContainer{
+    display: block;
+    margin-bottom: 32px;
+}
+
+.userAdd{
+    width: 100%;
+    text-align: center;
+    top: 35px;
+    position: absolute;
+}
+
+.icon{
+    background-color: white;
+    border-radius: 100%;
 }
