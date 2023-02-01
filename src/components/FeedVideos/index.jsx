@@ -8,7 +8,6 @@ export const FeedVideos = () => {
   const [error, setError] = React.useState(null)
   React.useEffect(() => {
     getVideos().then(([error, videos]) => {
-      console.log(videos)
       if (!error) {
         setVideos(videos)
       } else {
