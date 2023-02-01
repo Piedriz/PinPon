@@ -5,7 +5,7 @@ import { AiFillPlusCircle } from 'react-icons/ai'
 
 import './styles.css'
 
-export const VideoPlayerAside = ({ user, likes = 1122, comments = 142, shares = 1241, hearted = false }) => {
+export const VideoPlayerAside = ({ user, likes, comments, shares, hearted }) => {
   const handleLike = () => {
     console.log('liked')
   }

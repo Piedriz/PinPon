@@ -4,7 +4,7 @@ import { VideoPlayerAside } from '../VideoPlayerActions'
 import { VideoDescription } from '../VideoDescription'
 import { useInView } from 'react-intersection-observer'
 
-export const VideoPlayer = ({ src, user, description, albumImage, song }) => {
+export const VideoPlayer = ({ src, user, description, albumImage, song, likes, comments, shares }) => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.9
@@ -42,7 +42,7 @@ export const VideoPlayer = ({ src, user, description, albumImage, song }) => {
         controls={false}
       />
       {!playing && <button className='player' onClick={handlePlay} />}
-      <VideoPlayerAside user={user} />
+      <VideoPlayerAside user={user} likes={likes} comments={comments} shares={shares} />
       <VideoDescription
         albumImage={albumImage}
         description={description}
