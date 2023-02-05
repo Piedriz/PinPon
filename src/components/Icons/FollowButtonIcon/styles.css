@@ -1,5 +1,5 @@
 .followIcon{
-    background-image: url('./followIcon.svg');
+    background-image: url('../../../assets/followIcon.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 27px;
