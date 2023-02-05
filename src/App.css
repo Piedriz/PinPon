@@ -1,17 +1,18 @@
 .App{
   background: #000;
-  height: 100vh;
   display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 50px;
+  grid-template-columns: 375px;
+  
   place-content: center;
   overflow: hidden;
 }
 main{ 
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  aspect-ratio: 9/16;
   max-width: 375px;
-  width: 100vw; 
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 3px;
 }

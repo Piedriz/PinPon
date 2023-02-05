@@ -1,8 +1,8 @@
 import React from 'react'
 import { BsFillHeartFill } from 'react-icons/bs'
 import { FaCommentDots, FaShare } from 'react-icons/fa'
-import { AiFillPlusCircle } from 'react-icons/ai'
-import { FollowButton } from '../FollowButton'
+// import { AiFillPlusCircle } from 'react-icons/ai'
+import { FollowButtonIcon } from '../Icons/FollowButtonIcon'
 
 import './styles.css'
 
@@ -22,7 +22,7 @@ export const VideoPlayerAside = ({ user, likes, comments, shares, hearted }) => 
         <img className='userImage' alt={user.username} src={user.userImage} />
         <div className='userAdd'>
           {/* <AiFillPlusCircle className='icon' color='rgb(254, 44, 85)' size={24} /> */}
-          <FollowButton />
+          <FollowButtonIcon />
         </div>
       </div>
       <button onClick={handleLike} className='actionButton'>

@@ -1,0 +1,7 @@
+.perfilIcon{
+    background-image: url('./assets/perfilIcon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}

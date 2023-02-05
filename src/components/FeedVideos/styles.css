@@ -1,3 +1,7 @@
+.feed{
+    height: 100%;
+}
 .item{
+    height: 100%;
     scroll-snap-align: center;
 }

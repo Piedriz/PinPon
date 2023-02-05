@@ -1,0 +1,7 @@
+.notificationIcon{
+    background-image: url('./assets/messagesIcon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
