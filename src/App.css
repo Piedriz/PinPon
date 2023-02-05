@@ -16,3 +16,20 @@ main{
   display: block;
   border-radius: 3px;
 }
+
+@media (min-width: 800px) {
+  main::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: rgba(71, 71, 70, 0.212);        /* color of the tracking area */
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background: rgb(109,213,237);
+    background: linear-gradient(180deg, rgba(109,213,237,0.9108018207282913) 0%, rgba(33,147,176,1) 67%);
+     /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+  }
+}
