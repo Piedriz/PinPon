@@ -1,8 +1,7 @@
 import React from 'react'
-import './styles.css'
-
+import { AiOutlineCompass } from 'react-icons/ai'
 export const TrendingIcon = () => {
   return (
-    <div className='trendingIcon' />
+    <AiOutlineCompass color='white' size={35} />
   )
 }

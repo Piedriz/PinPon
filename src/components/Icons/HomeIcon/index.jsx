@@ -1,8 +1,7 @@
 import React from 'react'
-import './styles.css'
-
+import { AiOutlineHome } from 'react-icons/ai'
 export const HomeIcon = () => {
   return (
-    <div className='homeIcon' />
+    <AiOutlineHome color='white' size={35} />
   )
 }

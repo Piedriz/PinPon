@@ -18,15 +18,15 @@ export const publishVideo = async ({ videoSrc, videoDescription }) => {
         src: videoSrc,
         user_id: '269d7977-70f5-4ed4-ac24-f1180090f69a',
         description: videoDescription,
-        song: 'sonido original - Amigrifo estafadisimo 😡!!',
-        albumImage: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7c30136717593c2bd3d295c8385aedcd~c5_100x100.jpeg?x-expires=1675033200&x-signature=t5rG4t1gN1i%2BAvHEmy4soq7zvjg%3D',
+        song: 'sonido original - Musica chida 😀!!',
+        albumImage: 'https://images6.fanpop.com/image/photos/37200000/Dilip-Mehta-photoshoot-1991-michael-jackson-37218788-300-275.jpg',
         shares: 0,
         comments: 0,
         likes: 0
       }
     ])
 
-  return [data, error]
+  return [error, data]
 }
 export const getVideos = async () => {
   const { data: videos, error } = await supabase

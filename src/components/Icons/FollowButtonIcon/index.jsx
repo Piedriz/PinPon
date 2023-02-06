@@ -1,7 +1,7 @@
 import React from 'react'
-import './styles.css'
+import { IoIosAddCircle } from 'react-icons/io'
 export const FollowButtonIcon = () => {
   return (
-    <div className='followIcon' />
+    <IoIosAddCircle size={30} color='#6dd5ed' />
   )
 }

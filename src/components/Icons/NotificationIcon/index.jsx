@@ -1,8 +1,7 @@
 import React from 'react'
-import './styles.css'
-
+import { AiOutlineMessage } from 'react-icons/ai'
 export const NotificationIcon = () => {
   return (
-    <div className='notificationIcon' />
+    <AiOutlineMessage color='white' size={35} />
   )
 }

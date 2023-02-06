@@ -4,6 +4,8 @@ import { useDropzone } from 'react-dropzone'
 import { BsFillCloudUploadFill } from 'react-icons/bs'
 import { publishVideo, uploadVideo } from '../../services'
 import { PacmanLoader } from 'react-spinners'
+import { styles } from './dropZoneStyles'
+import toast from 'react-simple-toasts'
 
 export const Upload = () => {
   const [uploading, setUploading] = useState(false)
@@ -12,27 +14,54 @@ export const Upload = () => {
 
   const onDrop = async (files) => {
     const [file] = files
-    setUploading(true)
-    const [error, fileURL] = await uploadVideo({ videoFile: file })
-    if (error) setOnError(error)
-    if (fileURL) {
+    if (file) {
+      const [file] = files
+      setUploading(true)
+      const [error, fileURL] = await uploadVideo({ videoFile: file })
+      if (error) {
+        setOnError(error.message)
+        return
+      }
+      if (fileURL) {
+        return (
+          setUploading(false),
+          setUploaded(fileURL)
+        )
+      }
+    } else {
       return (
-        setUploading(false),
-        setUploaded(fileURL)
+        setOnError({ code: 'invalid file type', message: 'the file must be a .mp4 video' })
       )
     }
   }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(uploaded)
-    if (!uploaded) return
-    const description = (e.target.description.value)
-    const [data, error] = await publishVideo({ videoSrc: uploaded, videoDescription: description })
-    if (error) setOnError(error.message)
-    if (data) {
-      console.log('video subido con exito')
+    if (!uploaded) {
+      window.alert('sube un video primero 😤')
+      return
     }
+    const description = (e.target.description.value)
+    await publishVideo({ videoSrc: uploaded, videoDescription: description })
+    toast('Video publicado 😀')
+    // if (error) {
+    //   setOnError(error.message)
+    //   return
+    // }
+    // if (data) {
+    //   window.alert('video publicado con exito 😀')
+    // }
   }
+  // function typeValidator (file) {
+  //   if (file.type !== 'video/mp4') {
+  //     return {
+  //       code: 'invalid file type',
+  //       message: 'the file must be a .mp4 video'
+  //     }
+  //   }
+
+  //   return null
+  // }
   const {
     getRootProps,
     getInputProps,
@@ -42,57 +71,24 @@ export const Upload = () => {
   } = useDropzone({
     disabled: uploading || uploaded,
     accept: {
-      'video/mp4': ['.mp4']
+      'video/mp4': []
     },
     maxFiles: 1,
     onDrop
   })
-
-  const baseStyle = {
-    flex: 1,
-    width: '260px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '30px',
-    height: '430px',
-    borderWidth: 2,
-    borderRadius: 8,
-    borderColor: '#5e5a5a92',
-    borderStyle: 'dashed',
-    backgroundColor: '#fafafa',
-    outline: 'none',
-    transition: 'border .24s ease-in-out'
-  }
-
-  const focusedStyle = {
-    borderColor: '#2196f3'
-  }
-
-  const acceptStyle = {
-    borderColor: '#00e676'
-  }
-
-  const uploadedStyle = {
-    backgroundColor: '#70f582c1'
-  }
-
-  const rejectStyle = {
-    borderColor: '#ff1744'
-  }
   const style = React.useMemo(() => ({
-    ...baseStyle,
-    ...(isFocused ? focusedStyle : {}),
-    ...(isDragAccept ? acceptStyle : {}),
-    ...(isDragReject ? rejectStyle : {}),
-    ...(uploaded ? uploadedStyle : {})
+    ...styles.baseStyle,
+    ...(isFocused ? styles.focusedStyle : {}),
+    ...(isDragAccept ? styles.acceptStyle : {}),
+    ...(isDragReject ? styles.rejectStyle : {}),
+    ...(uploaded ? styles.uploadedStyle : {})
   }), [
     isFocused,
     isDragAccept,
     isDragReject,
     uploaded
   ])
+
   const renderContent = () => {
     if (isDragReject) { return (<h4>Archivo no válido</h4>) }
     if (isDragAccept) { return (<h4>¡Suelta para subir!</h4>) }
@@ -100,7 +96,7 @@ export const Upload = () => {
     if (uploading) { return (<PacmanLoader color='#36d7b7' />) }
     if (uploaded) { return (<h4>¡Video cargado con exito!</h4>) }
 
-    if (onError) { return (<h4>{onError}</h4>) }
+    if (onError) { return (<><h4>{onError?.code}</h4><h4>{onError?.message}</h4></>) }
     return (
       <>
         <div className='icon'>
@@ -132,7 +128,7 @@ export const Upload = () => {
     <div className='upload'>
 
       <h1>Cargar video</h1>
-      <p>Este video se publicará en el perfil de @piedriz</p>
+      <p>Este video se publicará en el perfil de @Uriel Castillo</p>
 
       <form onSubmit={handleSubmit}>
         <section>
@@ -145,7 +141,7 @@ export const Upload = () => {
 
         <label>
           Leyenda
-          <input name='description' placeholder='' />
+          <input required name='description' placeholder='' />
         </label>
 
         <button>

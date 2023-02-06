@@ -7,7 +7,7 @@ export const VideoDescription = ({ user, description, albumImage, song }) => {
   return (
     <footer className='description'>
 
-      <div>
+      <div className='descriptionData'>
         <strong>
           <a className='author' href={`/user/${user.username}`}>
             @{user.username}

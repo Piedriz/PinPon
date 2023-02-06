@@ -8,6 +8,7 @@
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .upload form{
@@ -60,6 +61,7 @@
     text-align: center;
     margin-top: 32px;
     width: 100%;
+
 }
 
 .button button{
@@ -74,4 +76,5 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
+    
 }

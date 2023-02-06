@@ -1,7 +1,5 @@
 .album{
     animation: rotate 5s linear infinite;
-    background-image: url("assets/vinilo2.png");
-    background-size: cover;
     width: 50px;
     height: 50px;
     display: flex;
