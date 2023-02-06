@@ -9,7 +9,7 @@ export const SongTicker = ({ song }) => {
       <div className='songTickerIcon'>
         <IoMusicalNotesSharp size={15} />
       </div>
-      <Marquee speed={100} gradient={false}>
+      <Marquee speed={90} gradient={false}>
         {song}
       </Marquee>
     </div>
