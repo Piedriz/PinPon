@@ -2,15 +2,14 @@
   background: #000;
   display: grid;
   height: 100vh;
-  grid-template-rows: 1fr 50px;
-  grid-template-columns: 375px;
-  
   place-content: center;
   overflow: hidden;
+  width: 100vw;
 }
 main{ 
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   max-width: 375px;
   height: 100%;
   display: block;
