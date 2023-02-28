@@ -1,10 +1,10 @@
 .App{
   background: #000;
-  display: grid;
+  display: flex;
   height: 100vh;
-  place-content: center;
-  overflow: hidden;
-  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main{ 
   scroll-snap-type: y mandatory;

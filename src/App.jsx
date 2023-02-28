@@ -11,6 +11,7 @@ function App () {
         <Route path='/upload' component={Upload} />
       </main>
       <NavBar />
+
     </div>
   )
 }
