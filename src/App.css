@@ -5,12 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 main{ 
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
   max-width: 375px;
+  margin-bottom: 50px;
   height: 100%;
   display: block;
   border-radius: 3px;
